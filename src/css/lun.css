@@ -1,0 +1,60 @@
+.banner {
+  width: 9999px;
+  height: 670px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.banner ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.banner ul li {
+  /* width: 100%; */
+  float: left;
+}
+.banner ul li img {
+  height: 670px;
+  width: 100%;
+}
+.banner ol {
+  background: red;
+  width: 120px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  bottom: 20px;
+}
+.banner ol li {
+  width: 15px;
+  height: 15px;
+  background: #ccc;
+  border-radius: 50%;
+  float: left;
+  text-indent: -999em;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.banner ol li.active {
+  background: orange;
+}
+.banner .left,
+.banner .right {
+  font-size: 100px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -60px;
+  text-decoration: none;
+  display: none;
+}
+.banner .left {
+  left: 20px;
+}
+.banner .right {
+  right: 20px;
+}
+
+/*# sourceMappingURL=lun.css.map */

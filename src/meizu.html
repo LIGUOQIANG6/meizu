@@ -14,6 +14,8 @@
         class="next-head" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" class="next-head" />
     <link rel="stylesheet" href="./css/index.css">
+
+    <!-- <script src="js/main.js" async="true"></script> -->
 </head>
 
 <body>
@@ -70,6 +72,7 @@
                     <img src="./img/yonghu.png" alt="">
                 </div> -->
                 <!-- 输入框结束 -->
+
                 <!-- 手机ul -->
                 <ul class="meizu-header-link" id="meizu-header-link">
                     <li><a href="javasccript:;">手机</a></li>
@@ -83,10 +86,39 @@
                     <li><a href="javasccript:;">APP下载</a></li>
                 </ul>
             </div>
+            <div class="gouwuche">
+                <a href="javasccript:;"><span class="gouwuc"></span></a>
+                <a href="javasccript:;"><span class="yonghu">
+                        <div class="meizu-header-user-img">
+
+                            <img id="meizu-header-user-img"
+                                src="https://www.meizu.com/static/header/images/icon-default-user.png" alt="log">
+                        </div>
+                    </span></a>
+            </div>
         </header>
         <div class="banner">
-            <img src="./img/lun-01.jpg" alt="">
+            <!-- <div class="box"> -->
+            <ul>
+                <li><img src="./img/lun-01.jpg" alt=""></li>
+                <li><img src="./img/lun-02.jpg" alt=""></li>
+                <li><img src="./img/lun-03.jpg" alt=""></li>
+                <li><img src="./img/lun-04.jpg" alt=""></li>
+                <li><img src="./img/lun-05.jpg" alt=""></li>
+                <li><img src="./img/lun-06.jpg" alt=""></li>
+            </ul>
+            <ol>
+                <li class="active">1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ol>
+            <a href="javascript:;" class="left">&lt;</a>
+            <a href="javascript:;" class="banner-right">&gt;</a>
         </div>
+        <!-- </div> -->
         <main>
             <!-- 魅族1212开始 -->
             <div class="meizu1212">
@@ -224,7 +256,7 @@
                 <!-- 手机商品栏开始 -->
                 <div class="meizshouji-shangpinglang">
                     <div class="meizu-shouji-wrapper">
-                        <ul>
+                        <ul id="shangpin">
                             <li class="phone1">
                                 <div><a href="javasccript:;"><img src="./img/meizu-shengxue-01.jpg"><span
                                             class="box-info "><span class="goods-name">MEIZU UR 高端定制耳机 预约</span><span
@@ -809,5 +841,9 @@
         <!-- 脚注结束 -->
     </div>
 </body>
+<script src="./script/move.js"></script>
+<script src="./script/ban.js"></script>
+<script src="./script/ajaxpromise.js"></script>
+<script src="./script/index.js"></script>
 
 </html>
