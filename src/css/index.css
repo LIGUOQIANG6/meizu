@@ -84,6 +84,9 @@ header .headerjuzhong .meizu-header-link li {
   height: 82px;
   float: left;
 }
+header .headerjuzhong .meizu-header-link li:hover a {
+  color: red;
+}
 header .headerjuzhong .meizu-header-link li a {
   color: #fff;
   display: block;
@@ -104,6 +107,37 @@ header svg {
   position: absolute;
   top: 0px;
   right: 200px;
+}
+.gouwuche:hover #denglv {
+  display: block;
+}
+.gouwuche #denglv {
+  display: none;
+  position: absolute;
+  left: 6px;
+  top: 70px;
+  width: 100px;
+  height: 120px;
+  background: #fff;
+}
+.gouwuche #denglv > a {
+  text-decoration: none;
+}
+.gouwuche #denglv > a p {
+  margin: 6px 22px;
+  text-align: right;
+  color: black;
+  line-height: 30px;
+}
+.gouwuche #denglv .sanj {
+  position: absolute;
+  top: -10px;
+  left: 36.5px;
+  width: 0;
+  height: 0;
+  border-width: 0 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff;
 }
 .gouwuche a {
   color: #fff;
@@ -178,7 +212,7 @@ header svg {
   top: 0;
 }
 .banner ul li {
-  /* width: 100%; */
+  /* width   : 100%; */
   float: left;
 }
 .banner ul li img {

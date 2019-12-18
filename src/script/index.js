@@ -1,4 +1,5 @@
-!function () {
+// !function () {
+    import ajax from './ajaxpromise.js';
     class Render {
         constructor() {
             
@@ -29,6 +30,6 @@
             })
         }
     }
-    
-    new Render().init()
-}()
+    export { Render };
+    // new Render().init()
+// }()

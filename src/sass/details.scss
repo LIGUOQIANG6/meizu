@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px/1.5 Helvetica, Tahoma, Arial, Hiragino Sans GB, Microsoft YaHei, SimSun, Heiti, sans-serif;
+}
+
+.page-index {
+    width   : 100%;
+    height  : 9686px;
+    // position: relative;
+}
+
+header {
+
+    width        : 100%;
+    height       : 82px;
+    background   : #ccc;
+    // background: red;
+    position     : absolute;
+    // top          : 0;
+    // z-index      : 999;
+
+    .headerjuzhong {
+        width        : 1340px;
+        height       : 122px;
+        margin       : 0 auto;
+        // background: green;
+
+        .meizu-logo {
+            float  : left;
+            padding: 28px 0;
+        }
+
+        // 输入框开始
+        .meizu-header-shurukuan {
+            float        : right;
+            position     : relative;
+            float        : right;
+            margin       : 26px 5px 0 10px;
+            width        : 170px;
+            height       : 30px;
+            line-height  : 29px;
+            font-size    : 12px;
+            background   : #fff;
+            border-radius: 20px;
+            border       : 1px solid #999;
+            box-sizing   : border-box;
+
+            input {
+                display       : block;
+                border        : none;
+                padding       : 0;
+                outline       : 0;
+                width         : 127px;
+                height        : 20px;
+                margin-left   : 15px;
+                margin-top    : 5px;
+                transition    : width .5s;
+                font-size     : 12px;
+                line-height   : 20px;
+                color         : #333;
+                background    : transparent;
+                box-sizing    : content-box;
+                outline-offset: 0;
+            }
+
+            // 放大镜开始
+            a {
+                position           : absolute;
+                top                : 0;
+                bottom             : 0;
+                right              : 0;
+                display            : block;
+                width              : 36px;
+                height             : 32px;
+                background-position: 50%;
+                cursor             : pointer;
+
+                svg {
+                    display: block;
+                    margin : 7px 5px 0 auto;
+                }
+            }
+
+            // 放大镜结束
+        }
+
+        // 输入框结束
+        .meizu-header-link {
+            list-style: none;
+            float     : right;
+
+            li {
+                // width: 68px;
+                height  : 82px;
+                float   : left;
+
+                &:hover {
+                    a {
+
+                        color: red;
+                    }
+                }
+
+                a {
+                    color          : #fff;
+                    display        : block;
+                    padding        : 31px 20px 30px;
+                    line-height    : 21px;
+                    font-size      : 14px;
+                    transition     : color .1s linear;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    svg {
+        width : 125px;
+        height: 24px;
+        color : #fff;
+
+    }
+}
+
+.gouwuche {
+    float   : right;
+    position: absolute;
+    top     : 0px;
+    right   : 200px;
+
+    &:hover {
+        #denglv {
+            display: block;
+        }
+    }
+
+    #denglv {
+        display   : none;
+        position  : absolute;
+        left      : 6px;
+        top       : 70px;
+        width     : 100px;
+        height    : 120px;
+        background: #fff;
+
+        >a {
+            text-decoration: none;
+
+            p {
+                margin     : 6px 22px;
+                text-align : right;
+                color      : black;
+                line-height: 30px;
+            }
+
+        }
+
+        .sanj {
+            position    : absolute;
+            top         : -10px;
+            left        : 36.5px;
+            width       : 0;
+            height      : 0;
+            border-width: 0 10px 10px;
+            border-style: solid;
+            border-color: transparent transparent #fff;
+        }
+    }
+
+
+    a {
+        color             : #fff;
+        display           : block;
+        // line-height    : 21px;
+        transition        : color .1s linear;
+        line-height       : 82px;
+        text-decoration   : none;
+        float             : left;
+
+        .gouwuc {
+            -webkit-font-smoothing: antialiased;
+            font                  : 14px/1.5 Helvetica, Tahoma, Arial, Hiragino Sans GB, Microsoft YaHei, SimSun, Heiti, sans-serif;
+            padding               : 0;
+            box-sizing            : border-box;
+            position              : relative;
+            float                 : right;
+            margin                : 27px 0 0 8px;
+            width                 : 29px;
+            height                : 29px;
+            text-align            : center;
+            font-size             : 12px;
+            text-indent           : 3px;
+            line-height           : 10px;
+            background-position-y : center;
+            background-image      : -webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+1pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxNSAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTctMTAtMThUMTQ6MTA6MTcrMDg6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE3LTEwLTE4VDA2OjEwOjQ0KzA4OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE3LTEwLTE4VDA2OjEwOjQ0KzA4OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2QUUwOEY1QUFCRUYxMUU3QTVBMjgzQ0E1MjkwQjRDNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2QUUwOEY1QkFCRUYxMUU3QTVBMjgzQ0E1MjkwQjRDNCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVBRkFBQTdGQUJFRjExRTdBNUEyODNDQTUyOTBCNEM0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjVBRkFBQTgwQUJFRjExRTdBNUEyODNDQTUyOTBCNEM0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+m874egAAAQZJREFUeNpi+P///9v/COAMxAyUYCYGBgYLIL7HAAHWDBQCkIG3gfg4lG9GDQMZkAz0BuL/ZOLfQFzNCPI31NvHGSgHf2AGcgLxZyBmptDAuzAvfwfia1Rw4TImJM4ZKhi4FNnA8xQaBnLQTWQDz1HqOhABixQQ4AbiT0hJiRTwD4ilgfgFsuavQHydTNftBRnGgMU1i8k0cDKMgexlqgBs4QUKS3ki9IIygxKGGWjFjwsQf4IWZbuAmA1HMWUCxK+h6k4BMT9MDl3h8f+owBOHgevQ1CUgl4fI4Asa/xsO735F4//A5WV9IL4OxD+AeCoQM+JwoRIQnwXi30C8DIhZYHIAAQYAs0g8ogfWri4AAAAASUVORK5CYII=) 1x, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAA2JJREFUaAXtmT2LFEEQhnc9PeEUxchE5Q40UcQTXEFBIwUDA0W9xNw/IAYaGBidBuofMNBE8ECRAw3USFBEBcH4/GYxEAW/QPRcn4LupRymZ3dmumd277qgqJrumbfeqq7pnZltNKLECsQKxArECsQKxArUXoFOp3MK/YFmydnaifoiQJZfszI1cy98xasLZ4kKfE/5LncbiU+4JodhvGlJksgI/g50hR1T9hb+KnN8stlsXlRzC8+lGNdNS4t5uPAyTGREklMq4Xn8tYlThuaw29JZjElwJfOf0OXmvNNYafNBkg5k2txu372QIulZtcqD6v6F2E10vStpvUu7zrHjg7ailpe20rGH0bskPaYnrJ8n4Tv2oiGwW+B4LI3n0rTBtDHujY9U7SVzW838FewgPXnJ6t5Adxt+27FXjd81fSdsrpCHE5twiyK0u0g1OyyGJLxB0SjPDdADqBXZIAbm5wkuuywxY+UhqpwANIb+UsDHyyH6uxpOlxSvVy7kPJtWgxb+CdAjBbZf+bW5JCrtfFQRmFF+ORfwM6qSH8qh+bkaPv7b2VIDvKUSFneznavLwqGvdhZ+uVraJPQc+9n4Ympta5IN1842SYLMoFZm7XgdFhLh2tkmRJATNlvsN3SZnavaElu38+sg8QkygWrZEyRQD1AINNH3isiFHpcUnybInAp0rjhS8SuJn7udi2xalqH+BlbXxjVlyWDf8JzwTB37danuEbXCf/BX+42QjUa86tpZqBBwDSqfe6zIe2hlQtBkO7f6CV64pWmfLwTQLVR1Wyfb+WnQhA24vo8PUnX51BtciCM/g/oF39+zcxZ7Ak+iWs5zULhrsmLZOfBH0Ms6KP6kne9l5bGslBBMVnmfApFXM/lLZl6N+XLlg4V8yRhXgLe5vQ6p40zXR8ISXD7Or8uMFGbyHbB7SfhtGHgHKqu8CX2AVin3CTbuoOQcLr3CGhkC8gFtJ7oRlfbzLb8BnEMfs6pPfINHvFiBWIFFVAE2rFF0Gm0bFX/UVwkECw2Gn5unIYP5T6ZzAzkuAFWSTYo3fEdY9zBMZGWTUv7vDhMSYC/4QZ973eWpb8ZnwtdS0kgbSzmtr6E0rLSxvsBKn0TLBd1UQuOXLkAEiBWIFYgViBWIFYgViBVY9BX4BxVsJ5lt9HBwAAAAAElFTkSuQmCC) 2x);
+            background-repeat     : no-repeat;
+            text-decoration       : none;
+            color                 : red;
+        }
+
+        .yonghu {
+            -webkit-font-smoothing: antialiased;
+            font                  : 14px/1.5 Helvetica, Tahoma, Arial, Hiragino Sans GB, Microsoft YaHei, SimSun, Heiti, sans-serif;
+            text-align            : right;
+            font-size             : 12px;
+            cursor                : pointer;
+            margin                : 0;
+            padding               : 0;
+            box-sizing            : border-box;
+            border                : 0;
+            border-radius         : 50%;
+            display               : block;
+            width                 : 29px;
+            height                : 29px;
+            margin-top            : -5px;
+
+            .meizu-header-user-img {
+                position         : relative;
+                cursor           : pointer;
+                z-index          : 3;
+                background-image : -webkit-image-set(url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACcUlEQVRIS+2WT4iNYRTGfw+KJCRCCVkoCguSNMmULEhiFrJQLExKIU3SLPxbSJKGssCCspAFQhQRTSTFAoUsZKQQCUkUHh3exe2b785977g1KWdz637f9/7Oec6/V/SRqY+4/Btg2wOBmcBWYF5SqxPYA9yT9C1XweyIbQ8CtgDrgWfAHfit2GxgEnAI2Cvpaw68HnALcBQ4A2wD3iXASGAXsBxYK+l0w8C2hwJHgFnAdElfKg+3PRh4ANwFWiV9qgXPitj2WOA8cEvSprJDbXcAc4Glkl41EnwB6JS0uQp4fyq4JY0EDweOAZHP+ZJ+FKTuD9xIeV8j6UOjIo6DQ+LtScrrBXAzcA7YCXQUHStzIivH8aHtCUAA3wItkl6m/8cBUcmjgGZJXbWijefZ4ARpBfYBV4EdCRC/C4A2SVH5WVYvuB+wDtgIjEiE9yEvcFjSzyxqvRGnqAcA44FpCfIQeCHpey60bqnrObjWu9lSp1kdBTSkRCkDn6PwGjarbY8BNgALU15D6qLDAQ6pI99XgIOSXvcUddWI0wpcmao4+vg58Ci1U7GIouhCjanARCAGTBtwstqq7AkcozHW4G3gOHBNUshZ1WxHGqK1VgNz0pqMUdrNSsG2m4BLwCmgXVIMjWyzHdHvBlYAiyTdLH7cDWw7ZI2dOyN9FPLWbbZD9nD+fuzq4hgtA0cxhYeP01zOHgqV3tmOvMf8ngI0FYutDBwvXgbOSooJ1WuzfQBYFh0h6UnlQWXgycAJ4KKkuNL02mzHFWkxsErS01rguEnGJvoo6U2vqX822mhgGNBVbKvsyfU3DmS3U6Mh/8GhwC+6vtEfKMLO+QAAAABJRU5ErkJggg==) 1x, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAA4tJREFUaAXtmc9LVUEUx32GIeS2yBCSSCRoIRRItM1cuMnAhbh061po07KFuPM/aBNuKtyIkJtalu1CJQncRNSiSCLRzD5fm4njy3fv3Pfufe8+nANfz9yZ8+N7zhvHuc+OjiixA7EDsQOxA+XtQKUZ1A4PD7vIc8/hJvqSy/sR/QY8FyqVyr6bb19FseNgC6SJbMbbtlLId4K5tCpPWJdPZ9sVfkKx35l7CIZAj4PGmtOalbm2Khjm2sZWVnm4XKsIrQHZWGmP7Q3jLmB/Z1VI6uEoG2CLVgwdduUWSE4AL9qqNT/Z6kpkC+z2nqi2afS5iMNBf368zPOnZts/pGlnO2/sbCwzXaIhn9Am8DKUlRqOOsi8bGb1b7o9THc8W3RPVgLyMf47Wf3T7IvY0mk5W7peRMGfTEX+CmmmUofWx8ZKdQwxKKLgDZP4lhmHDq2PjRXqn2hXRMGrJuOYGYcOrY+NFerfXDsOnAHw2x08e2i7RRPJyBbIR6IYA4kOZVmE6IoYO1kI5YX9gndCr4T6tdwOsqOG+C/GegdOFNkA2XoZTXQo2yKslzxz9Da4UIuj1pwN6kiWatmWdh7a/eDbX/5HP9/x8797teaA1rzIp7+0hSURg/gI2PeVoL+CB+C6g8aa8yLbkaSYpV+jgEmw6ytK0LKZLH1BIQQpZBi8TyhWa8MhsRq1SX0xbzSB96egM4z1Cd4H19z8OvopeMKr4YGbiyp2IHYgdiB2wHcg11Oak/gKge84XEXrOnkenAUhsofRF/AZbIEXAif4B3Q5hCL1ffIYeAWKEsVWjlw/oMwdhMAgeA2aJco1mJloHg4kngY/qirV9fAZmAE3gF7og/97IFvnI1/FUKzqa6lyTudRQ3AMRwb1T34yegQuBgcJNFRMF1s5rMwEhmjMjIxTwH+FIwJrwF8VGwue4K0c4C3wIg5TCS6NL5GgF9h33Jc8n2s8clgE5QLK6UVcesO867Ai+KLPhF4Hmf+zUEfaYy7KCTaAl8VjBnk9EL0PHLgs2k6384qdNY5yA/9rJU59WWOk2hN0FnhZTnUo2AAiy54MejY0XZYv4u+aoI/NuFVDy8FyS+STpWD7BdxaYtTmLFoOlls+2dk29gLQnU/U+qPAp9ts6d3QSMF3UwX3QbnMB/t5nyJ0PZyybOkiODc95qkruOkdjgljB2IHYgdiB2IHYgdiB05NB/4ACa0OHk/GEbwAAAAASUVORK5CYII=) 2x);
+                background-repeat: no-repeat;
+
+                img {
+                    border       : 0;
+                    border-radius: 50%;
+                    display      : block;
+                    width        : 29px;
+                    height       : 29px;
+                    margin-top   : 30px;
+
+                    // &:hover {
+
+                    //     // display: none;
+                    //     #denglv {
+                    //         display: block;
+                    //     }
+                    // }
+
+                }
+
+                // img:hover{
+                //     // img{
+                //         display: none;
+                //     // }
+                // }
+            }
+
+
+        }
+    }
+
+
+}
+
+// 详情开始
+.goodsinfo {
+    margin: 0 540px;
+    padding-top: 282px;
+    a {
+        text-decoration: none;
+    }
+
+    ul,
+    ol,
+    li {
+        list-style: none;
+    }
+
+    input {
+        border: 0;
+    }
+
+    .wrap {
+        float   : left;
+        position: relative;
+    }
+
+    #spic {
+        width   : 400px;
+        height  : 400px;
+        border  : 1px solid #000;
+        float   : left;
+        position: relative;
+    }
+
+    #spic img {
+        width : 400px;
+        height: 400px;
+    }
+
+    #sf {
+        width     : 50px;
+        height    : 50px;
+        background: orange;
+        opacity   : 0.3;
+        position  : absolute;
+        left      : 0px;
+        top       : 0px;
+        visibility: hidden;
+    }
+
+    #bf {
+        width     : 400px;
+        height    : 500px;
+        border    : 1px solid #000;
+        overflow  : hidden;
+        position  : absolute;
+        left      : 410px;
+        visibility: hidden;
+        z-index   : 100;
+    }
+
+    #bf img {
+        position: absolute;
+        left    : 0px;
+        top     : 0px;
+        width   : 800px;
+        height  : 800px;
+    }
+
+    #ulist {
+        position: absolute;
+        left    : 0px;
+        top     : 430px;
+        width   : 402px;
+        height  : 56px;
+        overflow: hidden;
+    }
+
+    #ulist a {
+        float          : left;
+        width          : 10px;
+        height         : 54px;
+        border         : 1px solid #ccc;
+        text-decoration: none;
+        line-height    : 56px;
+        text-align     : center;
+        background     : #fff;
+    }
+
+    #list {
+        float      : left;
+        margin-left: 18px;
+        width      : 372px;
+        position   : relative;
+    }
+
+    .wrap ul {
+        list-style: none;
+        float     : left;
+        position  : absolute;
+        left      : 0px;
+        top       : 0px;
+    } 
+
+    .wrap ul li {
+        float        : left;
+        width        : 56px;
+        height       : 56px;
+        padding-right: 6px;
+    }
+
+    .wrap ul li img {
+        width : 52px;
+        height: 52px;
+        border: 1px solid #ccc;
+    }
+
+    #right {
+        position: absolute;
+        right   : 0px;
+        top     : 0px;
+        color   : #333;
+    }
+
+    #left {
+        position: absolute;
+        left    : 0px;
+        top     : 0px;
+        z-index : 2;
+        color   : #fff;
+    }
+
+
+
+    .goodsinfo {
+        margin: 50px 0 0 100px;
+    }
+
+    .goodsinfo-img {
+        width : 200px;
+        height: 200px;
+        float : left;
+    }
+
+    .goodsinfo-img img {
+        width : 200px;
+        height: 200px;
+    }
+
+    .goodsinfo-word {
+        overflow: hidden;
+        float   : left;
+    }
+
+    .p-name {
+        width      : 350px;
+        height     : 50px;
+        margin-left: 50px;
+        margin-top : 20px;
+    }
+
+    .p-name .loadtitle {
+        font : 16px "微软雅黑";
+        color: #666666;
+    }
+
+    .p-price {
+        margin-left: 50px;
+        margin-top : 10px;
+        width      : 300px;
+        height     : 50px;
+        background : rgba(183, 183, 183, 0.4);
+        line-height: 50px;
+    }
+
+    .p-btn {
+        margin-top: 20px;
+    }
+
+    .p-btn input {
+        display    : inline-block;
+        width      : 50px;
+        height     : 46px;
+        font-size  : 20px;
+        font-family: "微软雅黑";
+        color      : black;
+        margin-left: 50px;
+        border     : 1px solid gray;
+        float      : left;
+    }
+
+    .p-btn a {
+        display         : block;
+        width           : 100px;
+        height          : 50px;
+        background-color: red;
+        font-size       : 16px;
+        font-family     : "微软雅黑";
+        color           : white;
+        line-height     : 50px;
+        text-align      : center;
+        float           : left;
+        margin-left     : 10px;
+    }
+}
+
+
+// 详情结束

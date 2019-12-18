@@ -6,7 +6,7 @@
     const oLeft = document.querySelector('.left');
     const oRight = document.querySelector('.banner-right');
     let index = 0;
-    let flag = true;
+    let flag = true; 
     let timer = null;
 
     //2.改变布局，计算moveUl的宽度
