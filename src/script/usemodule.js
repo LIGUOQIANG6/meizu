@@ -1,7 +1,7 @@
 
-// import { ajax } from "./ajaxpromise.js";  //引入模块
-import { Render } from "./index.js";  //引入模块
-// import { Render } from "./module_effect";  //引入模块
-// new ajax();
-// new Render();
-new Render().init();
+// 渲染
+import { Render } from "./index.js";
+new Render().init()
+// 轮播图
+import { banner } from "./ban.js";
+new banner()

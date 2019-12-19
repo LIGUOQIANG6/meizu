@@ -40,3 +40,4 @@ function bufferMove(obj, json, fn) {
         }
     }, 10);
 }
+export {bufferMove}

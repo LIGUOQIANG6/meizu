@@ -1,4 +1,4 @@
-export default function ajax(obj) {
+function ajax(obj) {
     //将对象转换成数据拼接适合的字符串的格式?&
     function objToString(obj) {
         if (Object.prototype.toString.call(obj).slice(8, -1) === 'Object') {
@@ -88,3 +88,4 @@ export default function ajax(obj) {
     });
     return promise;
 }
+export { ajax }
