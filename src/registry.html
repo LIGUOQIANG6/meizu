@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册</title>
-    <link rel="stylesheet" href="../style/login.css">
-    <link rel="stylesheet" href="../font/iconfont.css">
-    <script type="text/javascript" src="../js/require.js" data-main="../js/main.login.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
 </head>
 
 <body>
@@ -23,23 +22,30 @@
     <!--主体-->
     <main>
         <div class="wrap">
-            <form action="" class="userinfo">
+            <form action="http://localhost/projectname/php/username.php" method="post" class="userinfo">
                 <p>用户注册</p>
-                <div><label for="">用户名</label><input type="text" class="username">
-                    <p class="uname"></p>
+                <div><label for="">用户名</label><input type="text" class="username" name="username">
+                    <p class="uname"><span></span></p>
                 </div>
-                <div><label for="">密码</label><input type="password" class="password">
+                <div><label for="">密码</label><input type="password" class="password" name="password">
                     <p class="upass"></p>
                 </div>
                 <div><label for="">确认密码</label><input type="password" class="verify">
                     <p class="uver"></p>
                 </div>
-                <div><label for=" ">手机号</label><input type="text " class="phone ">
+                <div><label for=" ">手机号</label><input type="text " class="phone " name="email">
                     <p class="uphone "></p>
                 </div>
-                <div><input type="button " value="立即注册 " class="btn "></div>
+                <div><input type="submit" value="立即注册 " class="btn " name="submit"></div>
                 <div><a href="./enter.html ">登录</a></div>
             </form>
+
+            <!-- <form action="http://localhost/JS1911/phpdata/username.php" method="post">
+                <p><label for="">用户名：</label><input type="text" name="username"><span></span></p>
+                <p><label for="">密　码：</label><input type="password" name="password"></p>
+                <p><label for="">邮　箱：</label><input type="text" name="email"></p>
+                <p><input type="submit" value="注册" name="submit"></p>
+            </form> -->
         </div>
     </main>
     <!--底部-->
@@ -49,37 +55,37 @@
                 <ul>
                     <li>
                         <a href="# ">
-                            <img src="../img/footer/f-01.png " alt=" ">
+                            <img src="./img/footer/f-01.png " alt=" ">
                             <p>满80免运费</p>
                         </a>
                     </li>
                     <li>
                         <a href="# ">
-                            <img src="../img/footer/f-02.png " alt=" ">
+                            <img src="./img/footer/f-02.png " alt=" ">
                             <p>100+城市次日送达</p>
                         </a>
                     </li>
                     <li>
                         <a href="# ">
-                            <img src="../img/footer/f-03.png " alt=" ">
+                            <img src="./img/footer/f-03.png " alt=" ">
                             <p>7天无理由退货</p>
                         </a>
                     </li>
                     <li>
                         <a href="# ">
-                            <img src="../img/footer/f-04.png " alt=" ">
+                            <img src="./img/footer/f-04.png " alt=" ">
                             <p>15天换货保障</p>
                         </a>
                     </li>
                     <li>
                         <a href="# ">
-                            <img src="../img/footer/f-05.png " alt=" ">
+                            <img src="./img/footer/f-05.png " alt=" ">
                             <p>一年免费保修</p>
                         </a>
                     </li>
                     <li>
                         <a href="# ">
-                            <img src="../img/footer/f-06.png " alt=" ">
+                            <img src="./img/footer/f-06.png " alt=" ">
                             <p>上门快修</p>
                         </a>
                     </li>
@@ -121,16 +127,19 @@
                         <a href="# ">简体中文</a>
                     </li>
                 </ul>
-                <p class="copyright ">©2019 Meizu Telecom Equipment Co., Ltd. All rights reserved. 粤ICP备13003602号 合字B2-20170010 营业执照 法律声明 <span class="bg1 "></span>粤公网安备 44049102496009号 <span class="bg2 "></span> <span class="bg3
+                <p class="copyright ">©2019 Meizu Telecom Equipment Co., Ltd. All rights reserved. 粤ICP备13003602号
+                    合字B2-20170010 营业执照 法律声明 <span class="bg1 "></span>粤公网安备 44049102496009号 <span class="bg2 "></span>
+                    <span class="bg3
                         "> </span><span class="bg4 "></span>
                 </p>
             </div>
             <div class="share ">
-                <a href=" "><img src="../img/footer/f-11.png " alt=" "></a>
-                <a href=" "><img src="../img/footer/f-12.png " alt=" "></a>
-                <a href=" "><img src="../img/footer/f-13.png " alt=" "></a>
-                <a href=" "><img src="../img/footer/f-14.png " alt=" "></a>
+                <a href=" "><img src="./img/footer/f-11.png " alt=" "></a>
+                <a href=" "><img src="./img/footer/f-12.png " alt=" "></a>
+                <a href=" "><img src="./img/footer/f-13.png " alt=" "></a>
+                <a href=" "><img src="./img/footer/f-14.png " alt=" "></a>
             </div>
+            <script src="./script/zhuce.js" type="module"></script>
 </body>
 
 </html>
